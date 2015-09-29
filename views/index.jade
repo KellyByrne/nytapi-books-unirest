@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1 NYT Books List
+  for book in books
+    div.book
+      h1 #{book.title}
+      h3 by: #{book.author}
+      p #{book.description}
